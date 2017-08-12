@@ -1,0 +1,4 @@
+{% for post in posts %}
+    <h2><a href="{% url 'blog:blogPost' post.id %}">{{ post.title }}</a></h2>
+    <p>Time: {{ post.timestamp }} Author: {{ post.author }}</p>
+{% endfor%}

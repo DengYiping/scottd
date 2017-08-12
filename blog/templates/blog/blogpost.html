@@ -1,0 +1,11 @@
+{% if post %}
+<h1>{{ post.title }}</h1>
+<h4>Time:  {{ post.timestamp }}   Author:   {{ post.author }}</h4>
+<p>{{ post.body }}</p>
+
+<ul>
+  {% for comment in comments %}
+  <li>{{ comment.comment }} time: {{ comment.timestamp }}</li>
+  {% endfor %}
+</ul>
+{% endif %}
