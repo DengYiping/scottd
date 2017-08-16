@@ -1,3 +1,8 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'blog/mdl/material.min.css' %}">
+<script src="{% static 'blog/mdl/material.min.js' %}"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 {% if post %}
 <h1>{{ post.title }}</h1>
 <h4>Time:  {{ post.timestamp }}   Author:   {{ post.author }}</h4>
